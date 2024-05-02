@@ -1,0 +1,65 @@
+@page {
+  size: A4 portrait;
+  margin: 15mm; /* Atur margin ke 15mm */
+}
+
+/* Mengurangi ukuran font secara keseluruhan dalam halaman */
+body {
+  font-family: 'Arial', sans-serif; /* Menambahkan Arial sebagai jenis font utama */
+  font-size: 18px;
+  padding-top: 5px; /* Atur padding atas sesuai kebutuhan */
+  padding-bottom: 5px; /* Atur padding bawah sesuai kebutuhan */
+  line-height: 1.5; /* Atur line-height sesuai kebutuhan */
+ }
+
+ /* Mengatur elemen dt untuk tidak tebal */
+.dt-not-bold {
+  font-weight: normal;
+}
+
+/* Mengatur Jarak pada teks dan underline */
+.underlined-text {
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Mengatur ketebalan underline */
+  text-underline-offset: 5px; /* Mengatur jarak antara teks dan underline */
+  text-decoration-skip: ink; /* Mengatur jarak antara teks dan underline */
+  margin-bottom: 2px; /* Mengatur jarak antara underline dan elemen di bawahnya */
+}
+
+
+/* Tabel tanpa border */
+.table-no-border {
+  width: 100%;
+}
+
+.table-no-border th,
+.table-no-border td {
+  border: none;
+  /* Menghapus border pada sel (th dan td) */
+  padding: 8px;
+  text-align: left;
+  font-weight: normal; /* Mengatur tebal teks menjadi normal */
+}
+
+.table-no-border th,
+.table-no-border td {
+  border: none;
+  /* Menghapus border pada sel (th dan td) */
+  padding: 8px;
+  text-align: center;
+  font-weight: normal; /* Mengatur tebal teks menjadi normal */
+  line-height: 0.5; /* Mengatur spasi antar baris menjadi 1.2 kali ukuran font */
+}
+/* Mengatur tinggi minimal pada tag <br> */
+table.table-no-border th br,
+table.table-no-border td br {
+  display: block; /* Mengubah elemen <br> menjadi elemen blok */
+  content: ""; /* Menambahkan konten kosong agar tinggi berlaku */
+  height: 20px; /* Sesuaikan tinggi minimal sesuai kebutuhan */
+}
+
+
+
+
+
+

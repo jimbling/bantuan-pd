@@ -1,0 +1,532 @@
+ERROR - 2023-12-18 08:14:50 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=2792 in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 173)
+#1 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\pip\app\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#11 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pip\app\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\pip\app\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-18 08:14:50 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pip`
+WHERE `deleted_at` IS NULL
+AND `tbl_pip`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-18 08:15:05 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=2792 in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 173)
+#1 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\pip\app\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#11 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pip\app\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\pip\app\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-18 08:15:05 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pip`
+WHERE `deleted_at` IS NULL
+AND `tbl_pip`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-18 13:37:46 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=5412 in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 173)
+#1 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\pip\app\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#11 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pip\app\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\pip\app\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-18 13:37:46 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_danalain`
+WHERE `deleted_at` IS NULL
+AND `tbl_danalain`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-18 13:38:04 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pip\app\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\pip\app\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-18 13:38:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_danalain`
+WHERE `deleted_at` IS NULL
+AND `tbl_danalain`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-18 13:38:18 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=5412 in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 173)
+#1 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\pip\app\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#11 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pip\app\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\pip\app\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-18 13:38:18 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_danalain`
+WHERE `deleted_at` IS NULL
+AND `tbl_danalain`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-18 13:47:20 --> mysqli_sql_exception: Table 'kdrj_bantuanpd.tbl_danalain' doesn't exist in engine in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pip\app\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-18 13:47:20 --> Table 'kdrj_bantuanpd.tbl_danalain' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_danalain`
+WHERE `deleted_at` IS NULL
+AND `tbl_danalain`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-18 13:47:36 --> mysqli_sql_exception: Table 'kdrj_bantuanpd.tbl_danalain' doesn't exist in engine in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pip\app\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-18 13:47:36 --> Table 'kdrj_bantuanpd.tbl_danalain' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_danalain`
+WHERE `deleted_at` IS NULL
+AND `tbl_danalain`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\DanalainModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DanaLainnya.php(18): App\Models\DanalainModel->getSiswaDanalain()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-18 13:48:09 --> mysqli_sql_exception: Table 'kdrj_bantuanpd.tbl_pip' doesn't exist in engine in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_pip...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pip...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pip...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pip...', Array, false)
+#4 C:\xampp\htdocs\pip\app\Controllers\Dashboard.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Dashboard->searchByNisn('$1')
+#6 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-18 13:48:09 --> Table 'kdrj_bantuanpd.tbl_pip' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pip`.`nisn`, `tbl_pip`.`nama_pd`, `tbl_pip`.`jenis_bantuan`, `tbl_pip`.`tanggal_sk`, `tbl_pip`.`tahap_id`
+FROM `tbl_pip`
+WHERE `tbl_pip`.`nisn` = :tbl_pip.nisn:', [...], false)
+ 2 APPPATH\Controllers\Dashboard.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->searchByNisn('$1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-18 14:00:21 --> mysqli_sql_exception: Table 'kdrj_bantuanpd.tbl_danalain' doesn't exist in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_dan...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_dan...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_dan...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_dan...', Array, false)
+#4 C:\xampp\htdocs\pip\app\Controllers\Dashboard.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Dashboard->searchByNisn('$1')
+#6 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-18 14:00:21 --> Table 'kdrj_bantuanpd.tbl_danalain' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_danalain`.`nisn`, `tbl_danalain`.`nama_pd`, `tbl_danalain`.`jenis_bantuan`, `tbl_danalain`.`tanggal_sk`, `tbl_danalain`.`tahap_id`
+FROM `tbl_danalain`
+WHERE `tbl_danalain`.`nisn` = :tbl_danalain.nisn:', [...], false)
+ 2 APPPATH\Controllers\Dashboard.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->searchByNisn('$1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-18 14:01:56 --> mysqli_sql_exception: Table 'kdrj_bantuanpd.tbl_master_data' doesn't exist in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\pip\app\Models\MasterDataModel.php(27): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(238): App\Models\MasterDataModel->getDataById(1)
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('1')
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-18 14:01:56 --> Table 'kdrj_bantuanpd.tbl_master_data' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_master_data`
+WHERE `tbl_master_data`.`id` = :tbl_master_data.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, 1)
+ 4 APPPATH\Models\MasterDataModel.php(27): CodeIgniter\BaseModel->find(1)
+ 5 APPPATH\Controllers\Bantuan.php(238): App\Models\MasterDataModel->getDataById(1)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-12-18 14:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 14:17:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\print_suket\suket.php on line 98.
+ 1 APPPATH\Views\admin\print_suket\suket.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\print_suket\\suket.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\print_suket\\suket.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/print_suket/suket', [], true)
+ 5 APPPATH\Controllers\Bantuan.php(252): view('admin/print_suket/suket', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-18 14:28:34 --> Class "App\Models\JenusbantuanModel" not found
+in APPPATH\Controllers\DanaLainnya.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\DanaLainnya->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-18 14:28:45 --> Class "App\Controllers\JenusbantuanModel" not found
+in APPPATH\Controllers\DanaLainnya.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\DanaLainnya->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-18 14:29:13 --> Class "App\Models\JenisbantuanModel" not found
+in APPPATH\Controllers\DanaLainnya.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\DanaLainnya->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-18 14:30:06 --> mysqli_sql_exception: Table 'kdrj_bantuanpd.tbl_jenis_bantuan' doesn't exist in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pip\app\Models\JenisbantuanModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pip\app\Controllers\DanaLainnya.php(25): App\Models\JenisbantuanModel->getJenisBantuan()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-18 14:30:06 --> Table 'kdrj_bantuanpd.tbl_jenis_bantuan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jenis_bantuan`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JenisbantuanModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\DanaLainnya.php(25): App\Models\JenisbantuanModel->getJenisBantuan()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DanaLainnya->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanaLainnya))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-18 21:22:21 --> Undefined variable $dana_lain
+in APPPATH\Views\admin\ss.php on line 50.
+ 1 APPPATH\Views\admin\ss.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dana_lain', 'APPPATH\\Views\\admin\\ss.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\ss.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/ss', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('admin/ss', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

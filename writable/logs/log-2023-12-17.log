@@ -1,0 +1,210 @@
+CRITICAL - 2023-12-17 12:05:01 --> Undefined array key "kapanewon"
+in APPPATH\Views\admin\print_suket\suket.php on line 110.
+ 1 APPPATH\Views\admin\print_suket\suket.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kapanewon"', 'APPPATH\\Views\\admin\\print_suket\\suket.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\print_suket\\suket.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/print_suket/suket', [], true)
+ 5 APPPATH\Controllers\Bantuan.php(252): view('admin/print_suket/suket', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 12:05:12 --> Undefined array key "kapanewon_sp"
+in APPPATH\Views\admin\print_suket\suket.php on line 110.
+ 1 APPPATH\Views\admin\print_suket\suket.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kapanewon_sp"', 'APPPATH\\Views\\admin\\print_suket\\suket.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\print_suket\\suket.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/print_suket/suket', [], true)
+ 5 APPPATH\Controllers\Bantuan.php(252): view('admin/print_suket/suket', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 12:07:05 --> Undefined array key "kapanewon_sp"
+in APPPATH\Views\admin\print_suket\suket.php on line 110.
+ 1 APPPATH\Views\admin\print_suket\suket.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kapanewon_sp"', 'APPPATH\\Views\\admin\\print_suket\\suket.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\print_suket\\suket.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/print_suket/suket', [], true)
+ 5 APPPATH\Controllers\Bantuan.php(252): view('admin/print_suket/suket', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 12:09:23 --> Undefined array key "kapanewon_sp"
+in APPPATH\Views\admin\print_suket\suket.php on line 110.
+ 1 APPPATH\Views\admin\print_suket\suket.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kapanewon_sp"', 'APPPATH\\Views\\admin\\print_suket\\suket.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\print_suket\\suket.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/print_suket/suket', [], true)
+ 5 APPPATH\Controllers\Bantuan.php(252): view('admin/print_suket/suket', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 12:11:14 --> Undefined array key "kapanewon_sp"
+in APPPATH\Views\admin\print_suket\suket.php on line 110.
+ 1 APPPATH\Views\admin\print_suket\suket.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kapanewon_sp"', 'APPPATH\\Views\\admin\\print_suket\\suket.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\print_suket\\suket.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/print_suket/suket', [], true)
+ 5 APPPATH\Controllers\Bantuan.php(252): view('admin/print_suket/suket', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-17 13:56:23 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pip\app\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\pip\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\pip\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\pip\app\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-17 13:56:23 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pip`
+WHERE `deleted_at` IS NULL
+AND `tbl_pip`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\PipModel.php(70): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Bantuan.php(39): App\Models\PipModel->getAllSiswaPip()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-17 13:56:27 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kdrj_bantuanpd', 3306, '', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pip\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pip\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '19')
+#6 C:\xampp\htdocs\pip\app\Models\PipModel.php(35): CodeIgniter\BaseModel->find('19')
+#7 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(236): App\Models\PipModel->getdetail('19')
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#10 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\pip\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\pip\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '19')
+#5 C:\xampp\htdocs\pip\app\Models\PipModel.php(35): CodeIgniter\BaseModel->find('19')
+#6 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(236): App\Models\PipModel->getdetail('19')
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+#8 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#9 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-17 13:56:27 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pip`
+WHERE `tbl_pip`.`deleted_at` IS NULL
+AND `tbl_pip`.`id` = :tbl_pip.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '19')
+ 5 APPPATH\Models\PipModel.php(35): CodeIgniter\BaseModel->find('19')
+ 6 APPPATH\Controllers\Bantuan.php(236): App\Models\PipModel->getdetail('19')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 13:56:35 --> Undefined array key "kapanewon_sp"
+in APPPATH\Views\admin\print_suket\suket.php on line 110.
+ 1 APPPATH\Views\admin\print_suket\suket.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kapanewon_sp"', 'APPPATH\\Views\\admin\\print_suket\\suket.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\print_suket\\suket.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/print_suket/suket', [], true)
+ 5 APPPATH\Controllers\Bantuan.php(252): view('admin/print_suket/suket', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 14:00:15 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\pip\app\Controllers\Bantuan.php on line 238
+in SYSTEMPATH\BaseModel.php on line 601.
+ 1 APPPATH\Controllers\Bantuan.php(238): CodeIgniter\BaseModel->findAll('kapanewon_sp')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-12-17 14:06:40 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\admin\print_suket\suket.php on line 113.
+ 1 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\print_suket\\suket.php')
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/print_suket/suket', [], true)
+ 4 APPPATH\Controllers\Bantuan.php(252): view('admin/print_suket/suket', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 14:07:25 --> Class "Date" not found
+in APPPATH\Views\admin\print_suket\suket.php on line 112.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/print_suket/suket', [], true)
+ 4 APPPATH\Controllers\Bantuan.php(252): view('admin/print_suket/suket', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 14:09:17 --> Class "Carbon\Carbon" not found
+in APPPATH\Views\admin\print_suket\suket.php on line 114.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/print_suket/suket', [], true)
+ 4 APPPATH\Controllers\Bantuan.php(252): view('admin/print_suket/suket', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->cetaksuketpip('19')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

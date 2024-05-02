@@ -1,0 +1,4 @@
+<?php echo strtoupper(substr(ucwords(strtolower($$data_cetak['nomenklatur'])), 0, 2)) . substr(ucwords(strtolower($siswaPip['nomenklatur'])), 2); ?>
+
+Merubah Data pada database : SD NEGERI KEDUNGREJO
+ditampilkan menjadi SD Negeri Kedungrejo

@@ -1,0 +1,153 @@
+/* Atur jenis font untuk seluruh dokumen cetak */
+@page {
+  size: A4 landscape;
+  margin-top: 1cm;
+  margin-left: 2cm;
+  margin-right: 1cm;
+  margin-bottom: 1cm;
+  font-family: "Arial", sans-serif; /* Ganti "Arial" dengan jenis font yang diinginkan */
+}
+
+/* Atur jenis font untuk seluruh isi dokumen */
+body {
+  font-size: 14px;
+  font-family: "Arial", sans-serif; /* Ganti "Arial" dengan jenis font yang diinginkan */
+}
+
+/* Tabel dengan border */
+.table-bordered {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-bordered,
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid black;
+}
+
+/* Atur efek text-align: center; hanya pada header tabel */
+.table-bordered thead th {
+  padding: 8px;
+  text-align: center;
+}
+
+/* Atur efek teks lainnya pada seluruh tabel */
+.table-bordered th,
+.table-bordered td {
+  padding: 8px;
+  text-align: center;
+}
+
+/* Mengatur warna latar belakang pada elemen <thead> */
+.table-bordered thead {
+  background-color: #ccc;
+  /* Warna abu-abu */
+}
+
+/* Tabel tanpa border */
+.table-no-border {
+  width: 100%;
+}
+
+.table-no-border th,
+.table-no-border td {
+  border: none;
+  /* Menghapus border pada sel (th dan td) */
+  padding: 8px;
+  text-align: left;
+  font-weight: normal; /* Mengatur tebal teks menjadi normal */
+}
+
+.table-no-border th,
+.table-no-border td {
+  border: none;
+  /* Menghapus border pada sel (th dan td) */
+  padding: 8px;
+  text-align: center;
+  font-weight: normal; /* Mengatur tebal teks menjadi normal */
+  line-height: 0.5; /* Mengatur spasi antar baris menjadi 1.2 kali ukuran font */
+}
+/* Mengatur tinggi minimal pada tag <br> */
+table.table-no-border th br,
+table.table-no-border td br {
+  display: block; /* Mengubah elemen <br> menjadi elemen blok */
+  content: ""; /* Menambahkan konten kosong agar tinggi berlaku */
+  height: 20px; /* Sesuaikan tinggi minimal sesuai kebutuhan */
+}
+
+/* Memisahkan tabel menjadi dua kolom dengan lebar setengah halaman */
+.table-half {
+  width: 50%;
+  float: left;
+}
+
+/* Tanda Tangan */
+.tanda-tangan {
+  width: 100%;
+  clear: both; /* Pastikan tanda tangan tidak terpisah di halaman baru */
+  page-break-inside: avoid; /* Hindari pemisahan di halaman baru */
+}
+h3 {
+  text-transform: uppercase;
+}
+.center {
+  text-align: center; /* Membuat teks di tengah secara horizontal */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Membuat teks di tengah secara vertikal */
+  height: 9vh; /* Atur tinggi sesuai kebutuhan, dalam contoh ini tinggi seluruh layar (viewport) */
+}
+
+.center h2,
+.center h3 {
+  margin: 0; /* Menghapus margin bawaan yang bisa mengganggu posisi tengah */
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  display: table-header-group; /* Header tabel akan tetap dicetak pada setiap halaman */
+}
+
+tbody {
+  display: table-row-group;
+}
+
+tr {
+  page-break-inside: avoid; /* Hindari pemisahan baris di tengah halaman */
+}
+
+/* Mengatur Jarak pada teks dan underline */
+.underlined-text {
+  text-decoration: underline;
+  text-decoration-thickness: 1px; /* Mengatur ketebalan underline */
+  text-underline-offset: 5px; /* Mengatur jarak antara teks dan underline */
+  text-decoration-skip: ink; /* Mengatur jarak antara teks dan underline */
+  margin-bottom: 2px; /* Mengatur jarak antara underline dan elemen di bawahnya */
+}
+
+/* Pengaturan agar konten tidak terpotong ke halaman berikutnya */
+.page-break {
+  page-break-inside: avoid;
+}
+
+/* Pengaturan agar elemen ini dimulai di halaman baru */
+.page-break-before {
+  page-break-before: always;
+}
+

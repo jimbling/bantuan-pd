@@ -1,0 +1,165 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 16, 2016, 7:58:19 AM
+    Author     : SEVIMA
+*/
+
+/* FOR APP TEMPLATE */
+.company-pattern{
+    background: rgba(0, 0, 0, 0.85) url(../img/pattern/pat_04.png) repeat !important;
+}
+
+.company-pattern-color-admin, .horizontal-menu-admin .nav.nav-pills > li.active > a, .horizontal-menu-admin .nav.nav-pills > li > a:hover, .horizontal-menu-admin .nav.nav-pills > li > a:focus, .horizontal-menu-admin .dropdown-menu > li > a:hover, .horizontal-menu-admin .dropdown-menu > li > a:focus, .horizontal-menu-admin .dropdown-menu > li > a:active {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    color:#FFF
+}
+
+.company-pattern-color-siakad, .horizontal-menu-siakad .nav.nav-pills > li.active > a, .horizontal-menu-siakad .nav.nav-pills > li > a:hover, .horizontal-menu-siakad .nav.nav-pills > li > a:focus, .horizontal-menu-siakad .dropdown-menu > li > a:hover, .horizontal-menu-siakad .dropdown-menu > li > a:focus, .horizontal-menu-siakad .dropdown-menu > li > a:active {
+    background-color: rgba(31, 58, 147, 0.9) !important;
+    color:#FFF
+}
+
+.company-pattern-color-akad, .horizontal-menu-akad .nav.nav-pills > li.active > a, .horizontal-menu-akad .nav.nav-pills > li > a:hover, .horizontal-menu-akad .nav.nav-pills > li > a:focus, .horizontal-menu-akad .dropdown-menu > li > a:hover, .horizontal-menu-akad .dropdown-menu > li > a:focus, .horizontal-menu-akad .dropdown-menu > li > a:active {
+    background-color: #1F3A93 !important;
+    color:#FFF
+}
+
+.company-pattern-color-aset, .horizontal-menu-aset .nav.nav-pills > li.active > a, .horizontal-menu-aset .nav.nav-pills > li > a:hover, .horizontal-menu-aset .nav.nav-pills > li > a:focus, .horizontal-menu-aset .dropdown-menu > li > a:hover, .horizontal-menu-aset .dropdown-menu > li > a:focus, .horizontal-menu-aset .dropdown-menu > li > a:active {
+    background-color: #2BA7A7 !important;
+    color:#FFF
+}
+
+.company-pattern-color-sdm, .horizontal-menu-sdm .nav.nav-pills > li.active > a, .horizontal-menu-sdm .nav.nav-pills > li > a:hover, .horizontal-menu-sdm .nav.nav-pills > li > a:focus, .horizontal-menu-sdm .dropdown-menu > li > a:hover, .horizontal-menu-sdm .dropdown-menu > li > a:focus, .horizontal-menu-sdm .dropdown-menu > li > a:active {
+    background-color: #F33F24 !important;
+    color:#FFF
+}
+
+.company-pattern-color-keuangan, .horizontal-menu-keuangan .nav.nav-pills > li.active > a, .horizontal-menu-keuangan .nav.nav-pills > li > a:hover, .horizontal-menu-keuangan .nav.nav-pills > li > a:focus, .horizontal-menu-keuangan .dropdown-menu > li > a:hover, .horizontal-menu-keuangan .dropdown-menu > li > a:focus, .horizontal-menu-keuangan .dropdown-menu > li > a:active {
+    background-color: #00743E !important;
+    color:#FFF
+}
+
+.company-pattern-color-keuakad, .horizontal-menu-keuakad .nav.nav-pills > li.active > a, .horizontal-menu-keuakad .nav.nav-pills > li > a:hover, .horizontal-menu-keuakad .nav.nav-pills > li > a:focus, .horizontal-menu-keuakad .dropdown-menu > li > a:hover, .horizontal-menu-keuakad .dropdown-menu > li > a:focus, .horizontal-menu-keuakad .dropdown-menu > li > a:active {
+    background-color: #05874B !important;
+    color:#FFF
+}
+
+.company-pattern-color-h2h, .horizontal-menu-h2h .nav.nav-pills > li.active > a, .horizontal-menu-h2h .nav.nav-pills > li > a:hover, .horizontal-menu-h2h .nav.nav-pills > li > a:focus, .horizontal-menu-h2h .dropdown-menu > li > a:hover, .horizontal-menu-h2h .dropdown-menu > li > a:focus, .horizontal-menu-h2h .dropdown-menu > li > a:active {
+    background-color: #05874B !important;
+    color:#FFF
+}
+
+.company-pattern-color-kemhs, .horizontal-menu-kemhs .nav.nav-pills > li.active > a, .horizontal-menu-kemhs .nav.nav-pills > li > a:hover, .horizontal-menu-kemhs .nav.nav-pills > li > a:focus, .horizontal-menu-kemhs .dropdown-menu > li > a:hover, .horizontal-menu-kemhs .dropdown-menu > li > a:focus, .horizontal-menu-kemhs .dropdown-menu > li > a:active {
+    background-color: #05874B !important;
+    color:#FFF
+}
+
+.company-pattern-color-integrator, .horizontal-menu-integrator .nav.nav-pills > li.active > a, .horizontal-menu-integrator .nav.nav-pills > li > a:hover, .horizontal-menu-integrator .nav.nav-pills > li > a:focus, .horizontal-menu-integrator .dropdown-menu > li > a:hover, .horizontal-menu-integrator .dropdown-menu > li > a:focus, .horizontal-menu-integrator .dropdown-menu > li > a:active {
+    background-color: #128AC2 !important;
+    color:#FFF
+}
+
+.company-pattern-color-pdpt, .horizontal-menu-pdpt .nav.nav-pills > li.active > a, .horizontal-menu-pdpt .nav.nav-pills > li > a:hover, .horizontal-menu-pdpt .nav.nav-pills > li > a:focus, .horizontal-menu-pdpt .dropdown-menu > li > a:hover, .horizontal-menu-pdpt .dropdown-menu > li > a:focus, .horizontal-menu-pdpt .dropdown-menu > li > a:active {
+    background-color: #0098BD !important;
+    color:#FFF
+}
+
+.company-pattern-color-pmb, .horizontal-menu-pmb .nav.nav-pills > li.active > a, .horizontal-menu-pmb .nav.nav-pills > li > a:hover, .horizontal-menu-pmb .nav.nav-pills > li > a:focus, .horizontal-menu-pmb .dropdown-menu > li > a:hover, .horizontal-menu-pmb .dropdown-menu > li > a:focus, .horizontal-menu-pmb .dropdown-menu > li > a:active {
+    background-color: #CF8613 !important;
+    color:#FFF
+}
+
+.company-pattern-color-spmb, .horizontal-menu-spmb .nav.nav-pills > li.active > a, .horizontal-menu-spmb .nav.nav-pills > li > a:hover, .horizontal-menu-spmb .nav.nav-pills > li > a:focus, .horizontal-menu-spmb .dropdown-menu > li > a:hover, .horizontal-menu-spmb .dropdown-menu > li > a:focus, .horizontal-menu-spmb .dropdown-menu > li > a:active {
+    background-color: #CF8613 !important;
+    color:#FFF
+}
+
+.company-pattern-color-helpdesk, .horizontal-menu-helpdesk .nav.nav-pills > li.active > a, .horizontal-menu-helpdesk .nav.nav-pills > li > a:hover, .horizontal-menu-helpdesk .nav.nav-pills > li > a:focus, .horizontal-menu-helpdesk .dropdown-menu > li > a:hover, .horizontal-menu-helpdesk .dropdown-menu > li > a:focus, .horizontal-menu-helpdesk .dropdown-menu > li > a:active {
+    background-color: #590E32 !important;
+    color:#FFF
+}
+
+.company-pattern-color-ucc, .horizontal-menu-ucc .nav.nav-pills > li.active > a, .horizontal-menu-ucc .nav.nav-pills > li > a:hover, .horizontal-menu-ucc .nav.nav-pills > li > a:focus, .horizontal-menu-ucc .dropdown-menu > li > a:hover, .horizontal-menu-ucc .dropdown-menu > li > a:focus, .horizontal-menu-ucc .dropdown-menu > li > a:active {
+    background-color: #71208C !important;
+    color:#FFF
+}
+
+@media screen and (max-width: 767px) {
+    body > .header .logo {
+        color: #FFF !important;
+    }
+    .company-color-admin{
+        background-color: #849696 !important;
+    }
+    .company-color-keuakad,.company-color-h2h,.company-color-keuangan{
+        background-color: #00A65A !important;
+    }
+    .company-color-pmb,.company-color-spmb{
+        background-color: #F39C12 !important;
+    }
+    .company-color-siakad, .company-color-akad{
+        background-color: #2849b5 !important;
+    }
+}
+
+/*FOR STICKY HEADER*/
+.header-fix-position{
+    position:fixed !important;
+    margin-top: 0 !important;
+    top:0 !important;
+    z-index: 1000;
+    background: white;
+    border-top: #3c8dbc solid;
+}
+
+@media (min-width: 911px){
+    .header-fix-position {
+        max-width: 1110px !important;
+    }
+}
+
+@media (min-width: 671px) and (max-width: 910px){
+    .header-fix-position {
+        max-width: 910px !important;
+    }
+}
+
+.btn-flat{
+    min-width: 22px !important;
+}
+
+.bs-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #008CBA;
+}
+
+.top-menu > li > a{
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+.top-menu{
+    margin-top: 10px;
+}
+
+.text-white{
+    color: white !important;
+}
+
+.company-pattern-color-pmbfront, .horizontal-menu-pmbfront .nav.nav-pills > li.active > a, .horizontal-menu-pmbfront .nav.nav-pills > li > a:hover, .horizontal-menu-pmbfront .nav.nav-pills > li > a:focus, .horizontal-menu-pmbfront .dropdown-menu > li > a:hover, .horizontal-menu-pmbfront .dropdown-menu > li > a:focus, .horizontal-menu-pmbfront .dropdown-menu > li > a:active {
+    background-color: #008CBA !important;
+    color:#FFF
+}
+
+/* TRIAL */
+
+.trial-class div {
+    color: #fc0 !important;
+}

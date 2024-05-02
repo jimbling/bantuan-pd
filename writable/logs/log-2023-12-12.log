@@ -1,0 +1,536 @@
+CRITICAL - 2023-12-12 11:07:33 --> Invalid file: "template/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(9): view('template/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 12:35:26 --> Undefined variable $spreadsheet
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $spreadsheet', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 12:35:55 --> Undefined variable $spreadsheet
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $spreadsheet', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 12:35:57 --> Undefined variable $spreadsheet
+in APPPATH\Controllers\Dashboard.php on line 13.
+ 1 APPPATH\Controllers\Dashboard.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $spreadsheet', 'APPPATH\\Controllers\\Dashboard.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 12:48:50 --> Undefined variable $uniqueYears
+in APPPATH\Views\admin\bantuan.php on line 11.
+ 1 APPPATH\Views\admin\bantuan.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uniqueYears', 'APPPATH\\Views\\admin\\bantuan.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\bantuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/bantuan', [], true)
+ 5 APPPATH\Controllers\Bantuan.php(10): view('admin/bantuan')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:09:45 --> Undefined variable $data
+in APPPATH\Controllers\Bantuan.php on line 15.
+ 1 APPPATH\Controllers\Bantuan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Bantuan.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:10:52 --> Undefined variable $data
+in APPPATH\Controllers\Bantuan.php on line 15.
+ 1 APPPATH\Controllers\Bantuan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Bantuan.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:11:47 --> File "path/to/excel/file.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('path/to/excel/file.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('path/to/excel/file.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('path/to/excel/file.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:13:28 --> File "path/to/excel/file.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('path/to/excel/file.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('path/to/excel/file.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('path/to/excel/file.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:13:52 --> File "../assets/exce/file.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('../assets/exce/file.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('../assets/exce/file.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('../assets/exce/file.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:14:01 --> File "../assets/excel/file.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('../assets/excel/file.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('../assets/excel/file.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('../assets/excel/file.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:14:19 --> File "../../assets/excel/file.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('../../assets/excel/file.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('../../assets/excel/file.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('../../assets/excel/file.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:14:35 --> File "/assets/excel/file.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('/assets/excel/file.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('/assets/excel/file.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('/assets/excel/file.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:15:24 --> File "../assets/excel/file.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('../assets/excel/file.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('../assets/excel/file.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('../assets/excel/file.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:15:33 --> File "excel/file.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('excel/file.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('excel/file.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('excel/file.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:17:16 --> File "excel/pip.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('excel/pip.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('excel/pip.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('excel/pip.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:17:32 --> File "/excel/pip.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('/excel/pip.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('/excel/pip.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('/excel/pip.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:17:44 --> File "/assets/excel/pip.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('/assets/excel/pip.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('/assets/excel/pip.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('/assets/excel/pip.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:17:53 --> File "../assets/excel/pip.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('../assets/excel/pip.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('../assets/excel/pip.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('../assets/excel/pip.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:18:02 --> File "../../assets/excel/pip.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('../../assets/excel/pip.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('../../assets/excel/pip.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('../../assets/excel/pip.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:19:10 --> File "../../../assets/excel/pip.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('../../../assets/excel/pip.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('../../../assets/excel/pip.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('../../../assets/excel/pip.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:19:14 --> File "../../../assets/excel/pip.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('../../../assets/excel/pip.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('../../../assets/excel/pip.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('../../../assets/excel/pip.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:20:29 --> File "../../public/assets/excel/pip.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('../../public/assets/excel/pip.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('../../public/assets/excel/pip.xlsx', null)
+ 3 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('../../public/assets/excel/pip.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:20:38 --> Class "ZipArchive" not found
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 63.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php(188): PhpOffice\PhpSpreadsheet\Shared\File::fileExists('zip://../public/assets/excel/pip.xlsx#_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(85): PhpOffice\PhpSpreadsheet\Shared\File::testFileNoThrow('FCPATH\\assets\\excel\\pip.xlsx', '_rels/.rels')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(155): PhpOffice\PhpSpreadsheet\Reader\Xlsx->canRead('FCPATH\\assets\\excel\\pip.xlsx')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('FCPATH\\assets\\excel\\pip.xlsx', null)
+ 5 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('FCPATH\\assets\\excel\\pip.xlsx')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:21:33 --> Class "ZipArchive" not found
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 63.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php(188): PhpOffice\PhpSpreadsheet\Shared\File::fileExists('zip://../public/assets/excel/pip.xlsx#_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(85): PhpOffice\PhpSpreadsheet\Shared\File::testFileNoThrow('FCPATH\\assets\\excel\\pip.xlsx', '_rels/.rels')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(155): PhpOffice\PhpSpreadsheet\Reader\Xlsx->canRead('FCPATH\\assets\\excel\\pip.xlsx')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('FCPATH\\assets\\excel\\pip.xlsx', null)
+ 5 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('FCPATH\\assets\\excel\\pip.xlsx')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:22:00 --> Class "ZipArchive" not found
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 63.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php(188): PhpOffice\PhpSpreadsheet\Shared\File::fileExists('zip://../public/assets/excel/pip.xlsx#_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(85): PhpOffice\PhpSpreadsheet\Shared\File::testFileNoThrow('FCPATH\\assets\\excel\\pip.xlsx', '_rels/.rels')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(155): PhpOffice\PhpSpreadsheet\Reader\Xlsx->canRead('FCPATH\\assets\\excel\\pip.xlsx')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('FCPATH\\assets\\excel\\pip.xlsx', null)
+ 5 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('FCPATH\\assets\\excel\\pip.xlsx')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:22:03 --> Class "ZipArchive" not found
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 63.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php(188): PhpOffice\PhpSpreadsheet\Shared\File::fileExists('zip://../public/assets/excel/pip.xlsx#_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(85): PhpOffice\PhpSpreadsheet\Shared\File::testFileNoThrow('FCPATH\\assets\\excel\\pip.xlsx', '_rels/.rels')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(155): PhpOffice\PhpSpreadsheet\Reader\Xlsx->canRead('FCPATH\\assets\\excel\\pip.xlsx')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('FCPATH\\assets\\excel\\pip.xlsx', null)
+ 5 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('FCPATH\\assets\\excel\\pip.xlsx')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:22:46 --> Class "ZipArchive" not found
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 63.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php(188): PhpOffice\PhpSpreadsheet\Shared\File::fileExists('zip://../public/assets/excel/pip.xlsx#_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(85): PhpOffice\PhpSpreadsheet\Shared\File::testFileNoThrow('FCPATH\\assets\\excel\\pip.xlsx', '_rels/.rels')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(155): PhpOffice\PhpSpreadsheet\Reader\Xlsx->canRead('FCPATH\\assets\\excel\\pip.xlsx')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('FCPATH\\assets\\excel\\pip.xlsx', null)
+ 5 APPPATH\Controllers\Bantuan.php(13): PhpOffice\PhpSpreadsheet\IOFactory::load('FCPATH\\assets\\excel\\pip.xlsx')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:26:31 --> Unclosed '{' on line 10
+in APPPATH\Controllers\Bantuan.php on line 65.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Bantuan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Bantuan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Bantuan')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Bantuan', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:27:00 --> Class "ZipArchive" not found
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 63.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php(188): PhpOffice\PhpSpreadsheet\Shared\File::fileExists('zip://../public/assets/excel/pip.xlsx#_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(85): PhpOffice\PhpSpreadsheet\Shared\File::testFileNoThrow('FCPATH\\assets\\excel\\pip.xlsx', '_rels/.rels')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(155): PhpOffice\PhpSpreadsheet\Reader\Xlsx->canRead('FCPATH\\assets\\excel\\pip.xlsx')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('FCPATH\\assets\\excel\\pip.xlsx', null)
+ 5 APPPATH\Controllers\Bantuan.php(14): PhpOffice\PhpSpreadsheet\IOFactory::load('FCPATH\\assets\\excel\\pip.xlsx')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:28:07 --> Class "ZipArchive" not found
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 63.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php(188): PhpOffice\PhpSpreadsheet\Shared\File::fileExists('zip://../public/assets/excel/pip.xlsx#_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(85): PhpOffice\PhpSpreadsheet\Shared\File::testFileNoThrow('FCPATH\\assets\\excel\\pip.xlsx', '_rels/.rels')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(155): PhpOffice\PhpSpreadsheet\Reader\Xlsx->canRead('FCPATH\\assets\\excel\\pip.xlsx')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('FCPATH\\assets\\excel\\pip.xlsx', null)
+ 5 APPPATH\Controllers\Bantuan.php(14): PhpOffice\PhpSpreadsheet\IOFactory::load('FCPATH\\assets\\excel\\pip.xlsx')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:28:10 --> Class "ZipArchive" not found
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 63.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php(188): PhpOffice\PhpSpreadsheet\Shared\File::fileExists('zip://../public/assets/excel/pip.xlsx#_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(85): PhpOffice\PhpSpreadsheet\Shared\File::testFileNoThrow('FCPATH\\assets\\excel\\pip.xlsx', '_rels/.rels')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(155): PhpOffice\PhpSpreadsheet\Reader\Xlsx->canRead('FCPATH\\assets\\excel\\pip.xlsx')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('FCPATH\\assets\\excel\\pip.xlsx', null)
+ 5 APPPATH\Controllers\Bantuan.php(14): PhpOffice\PhpSpreadsheet\IOFactory::load('FCPATH\\assets\\excel\\pip.xlsx')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:29:11 --> Class "ZipArchive" not found
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 63.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php(188): PhpOffice\PhpSpreadsheet\Shared\File::fileExists('zip://../public/assets/excel/pip.xlsx#_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(85): PhpOffice\PhpSpreadsheet\Shared\File::testFileNoThrow('FCPATH\\assets\\excel\\pip.xlsx', '_rels/.rels')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(155): PhpOffice\PhpSpreadsheet\Reader\Xlsx->canRead('FCPATH\\assets\\excel\\pip.xlsx')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('FCPATH\\assets\\excel\\pip.xlsx', null)
+ 5 APPPATH\Controllers\Bantuan.php(14): PhpOffice\PhpSpreadsheet\IOFactory::load('FCPATH\\assets\\excel\\pip.xlsx')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 13:30:01 --> Class "ZipArchive" not found
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 63.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php(188): PhpOffice\PhpSpreadsheet\Shared\File::fileExists('zip://../public/assets/excel/pip.xlsx#_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(85): PhpOffice\PhpSpreadsheet\Shared\File::testFileNoThrow('FCPATH\\assets\\excel\\pip.xlsx', '_rels/.rels')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(155): PhpOffice\PhpSpreadsheet\Reader\Xlsx->canRead('FCPATH\\assets\\excel\\pip.xlsx')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('FCPATH\\assets\\excel\\pip.xlsx', null)
+ 5 APPPATH\Controllers\Bantuan.php(14): PhpOffice\PhpSpreadsheet\IOFactory::load('FCPATH\\assets\\excel\\pip.xlsx')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-12 13:40:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22...' at line 1 in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#6 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-12 13:40:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pip` (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32) VALUES (:1:, :2:, :3:, :4:, :5:, :6:, :7:, :8:, :9:, :10:, :11:, :12:, :13:, :14:, :15:, :16:, :17:, :18:, :19:, :20:, :21:, :22:, :23:, :24:, :25:, :26:, :27:, :28:, :29:, :30:, :31:, :32:)', [...], false)
+ 2 APPPATH\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-12 13:43:40 --> mysqli_sql_exception: Column 'tanggal_sk' cannot be null in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#6 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-12 13:43:40 --> Column 'tanggal_sk' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pip` (`peserta_didik_id`, `sekolah_id`, `npsn`, `nomenklatur`, `kelas`, `rombel`, `nama_pd`, `nama_ibu_kandung`, `nama_ayah`, `tanggal_lahir`, `tempat_lahir`, `nisn`, `nik`, `jenis_kelamin`, `nominal`, `no_rekening`, `tahap_id`, `nomor_sk`, `tanggal_sk`, `nama_rekening`, `tanggal_cair`, `status_cair`, `no_KIP`, `no_KKS`, `no_KPS`, `virtual_acc`, `nama_kartu`, `semester_id`, `layak_pip`, `keterangan_pencairan`, `confirmation_text`, `tahap_keterangan`) VALUES (:peserta_didik_id:, :sekolah_id:, :npsn:, :nomenklatur:, :kelas:, :rombel:, :nama_pd:, :nama_ibu_kandung:, :nama_ayah:, :tanggal_lahir:, :tempat_lahir:, :nisn:, :nik:, :jenis_kelamin:, :nominal:, :no_rekening:, :tahap_id:, :nomor_sk:, :tanggal_sk:, :nama_rekening:, :tanggal_cair:, :status_cair:, :no_KIP:, :no_KKS:, :no_KPS:, :virtual_acc:, :nama_kartu:, :semester_id:, :layak_pip:, :keterangan_pencairan:, :confirmation_text:, :tahap_keterangan:)', [...], false)
+ 2 APPPATH\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-12 13:44:43 --> mysqli_sql_exception: Column 'nama_ibu_kandung' cannot be null in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#6 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-12 13:44:43 --> Column 'nama_ibu_kandung' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pip` (`peserta_didik_id`, `sekolah_id`, `npsn`, `nomenklatur`, `kelas`, `rombel`, `nama_pd`, `nama_ibu_kandung`, `nama_ayah`, `tanggal_lahir`, `tempat_lahir`, `nisn`, `nik`, `jenis_kelamin`, `nominal`, `no_rekening`, `tahap_id`, `nomor_sk`, `tanggal_sk`, `nama_rekening`, `tanggal_cair`, `status_cair`, `no_KIP`, `no_KKS`, `no_KPS`, `virtual_acc`, `nama_kartu`, `semester_id`, `layak_pip`, `keterangan_pencairan`, `confirmation_text`, `tahap_keterangan`) VALUES (:peserta_didik_id:, :sekolah_id:, :npsn:, :nomenklatur:, :kelas:, :rombel:, :nama_pd:, :nama_ibu_kandung:, :nama_ayah:, :tanggal_lahir:, :tempat_lahir:, :nisn:, :nik:, :jenis_kelamin:, :nominal:, :no_rekening:, :tahap_id:, :nomor_sk:, :tanggal_sk:, :nama_rekening:, :tanggal_cair:, :status_cair:, :no_KIP:, :no_KKS:, :no_KPS:, :virtual_acc:, :nama_kartu:, :semester_id:, :layak_pip:, :keterangan_pencairan:, :confirmation_text:, :tahap_keterangan:)', [...], false)
+ 2 APPPATH\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-12 13:47:42 --> mysqli_sql_exception: Column 'nama_ibu_kandung' cannot be null in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#6 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-12 13:47:42 --> Column 'nama_ibu_kandung' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pip` (`peserta_didik_id`, `sekolah_id`, `npsn`, `nomenklatur`, `kelas`, `rombel`, `nama_pd`, `nama_ibu_kandung`, `nama_ayah`, `tanggal_lahir`, `tempat_lahir`, `nisn`, `nik`, `jenis_kelamin`, `nominal`, `no_rekening`, `tahap_id`, `nomor_sk`, `tanggal_sk`, `nama_rekening`, `tanggal_cair`, `status_cair`, `no_KIP`, `no_KKS`, `no_KPS`, `virtual_acc`, `nama_kartu`, `semester_id`, `layak_pip`, `keterangan_pencairan`, `confirmation_text`, `tahap_keterangan`) VALUES (:peserta_didik_id:, :sekolah_id:, :npsn:, :nomenklatur:, :kelas:, :rombel:, :nama_pd:, :nama_ibu_kandung:, :nama_ayah:, :tanggal_lahir:, :tempat_lahir:, :nisn:, :nik:, :jenis_kelamin:, :nominal:, :no_rekening:, :tahap_id:, :nomor_sk:, :tanggal_sk:, :nama_rekening:, :tanggal_cair:, :status_cair:, :no_KIP:, :no_KKS:, :no_KPS:, :virtual_acc:, :nama_kartu:, :semester_id:, :layak_pip:, :keterangan_pencairan:, :confirmation_text:, :tahap_keterangan:)', [...], false)
+ 2 APPPATH\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-12 13:51:34 --> mysqli_sql_exception: Column 'nama_ibu_kandung' cannot be null in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#6 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-12 13:51:34 --> Column 'nama_ibu_kandung' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pip` (`peserta_didik_id`, `sekolah_id`, `npsn`, `nomenklatur`, `kelas`, `rombel`, `nama_pd`, `nama_ibu_kandung`, `nama_ayah`, `tanggal_lahir`, `tempat_lahir`, `nisn`, `nik`, `jenis_kelamin`, `nominal`, `no_rekening`, `tahap_id`, `nomor_sk`, `tanggal_sk`, `nama_rekening`, `tanggal_cair`, `status_cair`, `no_KIP`, `no_KKS`, `no_KPS`, `virtual_acc`, `nama_kartu`, `semester_id`, `layak_pip`, `keterangan_pencairan`, `confirmation_text`, `tahap_keterangan`) VALUES (:peserta_didik_id:, :sekolah_id:, :npsn:, :nomenklatur:, :kelas:, :rombel:, :nama_pd:, :nama_ibu_kandung:, :nama_ayah:, :tanggal_lahir:, :tempat_lahir:, :nisn:, :nik:, :jenis_kelamin:, :nominal:, :no_rekening:, :tahap_id:, :nomor_sk:, :tanggal_sk:, :nama_rekening:, :tanggal_cair:, :status_cair:, :no_KIP:, :no_KKS:, :no_KPS:, :virtual_acc:, :nama_kartu:, :semester_id:, :layak_pip:, :keterangan_pencairan:, :confirmation_text:, :tahap_keterangan:)', [...], false)
+ 2 APPPATH\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-12 13:52:52 --> mysqli_sql_exception: Column 'nama_ibu_kandung' cannot be null in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#6 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-12 13:52:52 --> Column 'nama_ibu_kandung' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pip` (`peserta_didik_id`, `npsn`, `nomenklatur`, `kelas`, `rombel`, `nama_pd`, `nama_ibu_kandung`, `nama_ayah`, `tanggal_lahir`, `tempat_lahir`, `nisn`, `nik`, `jenis_kelamin`, `nominal`, `no_rekening`, `tahap_id`, `nomor_sk`, `tanggal_sk`, `nama_rekening`, `tanggal_cair`, `status_cair`, `no_KIP`, `no_KKS`, `no_KPS`, `virtual_acc`, `nama_kartu`, `semester_id`, `layak_pip`, `keterangan_pencairan`, `confirmation_text`, `tahap_keterangan`) VALUES (:peserta_didik_id:, :npsn:, :nomenklatur:, :kelas:, :rombel:, :nama_pd:, :nama_ibu_kandung:, :nama_ayah:, :tanggal_lahir:, :tempat_lahir:, :nisn:, :nik:, :jenis_kelamin:, :nominal:, :no_rekening:, :tahap_id:, :nomor_sk:, :tanggal_sk:, :nama_rekening:, :tanggal_cair:, :status_cair:, :no_KIP:, :no_KKS:, :no_KPS:, :virtual_acc:, :nama_kartu:, :semester_id:, :layak_pip:, :keterangan_pencairan:, :confirmation_text:, :tahap_keterangan:)', [...], false)
+ 2 APPPATH\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-12 13:53:12 --> mysqli_sql_exception: Column 'nama_ibu_kandung' cannot be null in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#6 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-12 13:53:12 --> Column 'nama_ibu_kandung' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pip` (`peserta_didik_id`, `npsn`, `nomenklatur`, `kelas`, `rombel`, `nama_pd`, `nama_ibu_kandung`, `nama_ayah`, `tanggal_lahir`, `tempat_lahir`, `nisn`, `nik`, `jenis_kelamin`, `nominal`, `no_rekening`, `tahap_id`, `nomor_sk`, `tanggal_sk`, `nama_rekening`, `tanggal_cair`, `status_cair`, `no_KIP`, `no_KKS`, `no_KPS`, `virtual_acc`, `nama_kartu`, `semester_id`, `layak_pip`, `keterangan_pencairan`, `confirmation_text`, `tahap_keterangan`) VALUES (:peserta_didik_id:, :npsn:, :nomenklatur:, :kelas:, :rombel:, :nama_pd:, :nama_ibu_kandung:, :nama_ayah:, :tanggal_lahir:, :tempat_lahir:, :nisn:, :nik:, :jenis_kelamin:, :nominal:, :no_rekening:, :tahap_id:, :nomor_sk:, :tanggal_sk:, :nama_rekening:, :tanggal_cair:, :status_cair:, :no_KIP:, :no_KKS:, :no_KPS:, :virtual_acc:, :nama_kartu:, :semester_id:, :layak_pip:, :keterangan_pencairan:, :confirmation_text:, :tahap_keterangan:)', [...], false)
+ 2 APPPATH\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-12 13:56:06 --> mysqli_sql_exception: Column 'nama_ayah' cannot be null in C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pip\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\pip\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\pip\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\pip\app\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\pip\system\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+#6 C:\xampp\htdocs\pip\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+#7 C:\xampp\htdocs\pip\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pip\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pip\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-12 13:56:06 --> Column 'nama_ayah' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_pip` (`peserta_didik_id`, `sekolah_id`, `npsn`, `nomenklatur`, `kelas`, `rombel`, `nama_pd`, `nama_ibu_kandung`, `nama_ayah`, `tanggal_lahir`, `tempat_lahir`, `nisn`, `nik`, `jenis_kelamin`, `nominal`, `no_rekening`, `tahap_id`, `nomor_sk`, `tanggal_sk`, `nama_rekening`, `tanggal_cair`, `status_cair`, `no_KIP`, `no_KKS`, `no_KPS`, `virtual_acc`, `nama_kartu`, `semester_id`, `layak_pip`, `keterangan_pencairan`, `confirmation_text`, `tahap_keterangan`) VALUES (:peserta_didik_id:, :sekolah_id:, :npsn:, :nomenklatur:, :kelas:, :rombel:, :nama_pd:, :nama_ibu_kandung:, :nama_ayah:, :tanggal_lahir:, :tempat_lahir:, :nisn:, :nik:, :jenis_kelamin:, :nominal:, :no_rekening:, :tahap_id:, :nomor_sk:, :tanggal_sk:, :nama_rekening:, :tanggal_cair:, :status_cair:, :no_KIP:, :no_KKS:, :no_KPS:, :virtual_acc:, :nama_kartu:, :semester_id:, :layak_pip:, :keterangan_pencairan:, :confirmation_text:, :tahap_keterangan:)', [...], false)
+ 2 APPPATH\Controllers\Bantuan.php(25): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bantuan->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bantuan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-12 22:24:04 --> Undefined variable $spreadsheet
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $spreadsheet', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
