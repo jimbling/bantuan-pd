@@ -27,24 +27,21 @@ class Masuk extends BaseController
 
     public function auth()
     {
-
         $userModel = new UserModel();
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
 
-        $cek = $userModel->get_data($username, $password);
+        // Mendapatkan data pengguna berdasarkan username
+        $user = $userModel->get_data_by_username($username);
 
-        if ($cek !== null && isset($cek['username']) && $cek['password'] == $username && isset($cek['username']) && $cek['password'] == $password) {
+        // Memeriksa apakah pengguna ada dan password sesuai
+        if ($user !== null && password_verify($password, $user['password'])) {
             $session = session();
 
-            $session->set('username', $cek['password']);
-            $session->set('id', $cek['id']);
-            $session->set('nama', $cek['nama']);
-
-            // // Menggunakan kolom "level" untuk menentukan peran pengguna
-            // $role = ($cek['user_level'] == 'Admin') ? 'Admin' : 'User';
-            // $session->set('role', $role);
-            // Validasi token CSRF
+            // Menyimpan data pengguna ke dalam session
+            $session->set('username', $user['username']);
+            $session->set('id', $user['id']);
+            $session->set('nama', $user['nama']);
 
             return redirect()->to('/dashboard');
         } else {

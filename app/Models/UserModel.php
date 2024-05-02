@@ -37,4 +37,12 @@ class UserModel extends Model
             ->where('id', $akunId) // Ubah 'user_id' menjadi 'id'
             ->update($data);
     }
+
+    public function get_data_by_username($username)
+    {
+        return $this->db->table('tbl_user')
+            ->where('username', $username)
+            ->get()
+            ->getRowArray();
+    }
 }

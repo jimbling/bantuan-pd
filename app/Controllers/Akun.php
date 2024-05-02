@@ -43,34 +43,43 @@ class Akun extends Controller
 
     public function update()
     {
-
         // Mengambil data yang dikirimkan melalui POST
         $id = $this->request->getPost('id');
         $username = $this->request->getPost('username');
-        $password = $this->request->getPost('password');
         $nama = $this->request->getPost('nama');
+        $password = $this->request->getPost('password');
 
         // Validasi data jika diperlukan
 
-        // Lakukan pembaruan data ke database menggunakan model AkunModel
+        // Lakukan pembaruan data ke database menggunakan model UserModel
         $userModel = new \App\Models\UserModel();
+
+        // Lakukan hashing password hanya jika tidak kosong
         $data = [
             'username' => $username,
-            'password' => $password,
             'nama' => $nama,
-
         ];
+
+        // Periksa apakah bidang password tidak kosong
+        if (!empty($password)) {
+            $data['password'] = password_hash($password, PASSWORD_DEFAULT); // Gunakan password_hash
+        }
+
+        // Memperbarui data pengguna
         $userModel->updateUser($id, $data);
 
         // Pesan respons
         $response = [
-            'status' => 'success', // Atau 'error' jika terjadi kesalahan
-            'message' => 'Data berhasil diperbarui', // Pesan sukses atau kesalahan
+            'status' => 'success',
+            'message' => 'Data berhasil diperbarui',
+            'redirect' => '/setting', // Tambahkan informasi pengalihan
         ];
 
         // Kirim respons JSON ke JavaScript
-        return $this->response->setJSON($response);
+        session()->setFlashData('pesanAkun', 'Data berhasil diperbaharui');
+        return redirect()->to('/setting')->with('success', 'Data siswa berhasil diubah.');
     }
+
 
     public function updateData()
     {

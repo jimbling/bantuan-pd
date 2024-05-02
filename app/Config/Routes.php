@@ -61,6 +61,7 @@ $routes->get('/rekapitulasi/(:num)', 'Rekap::cetakRekap/$1');
 $routes->get('/surat/suket_wali', 'Akun::cetakSuket');
 $routes->get('/suket_wali/filterData', 'Bantuan::filterByYear');
 $routes->post('/tabungan/hapus_buku_tabungan', 'Bantuan::hapus_buku_tabungan');
+$routes->post('/data/akun/update', 'Akun::update');
 
 $routes->get('/siswapip/suket_aktivasi/(:num)', 'Bantuan::cetaksuketAktivasi/$1');
 $routes->get('/siswapip/cetaksuketWali/(:num)', 'Bantuan::cetaksuketWali/$1');
