@@ -187,17 +187,17 @@
                         <div class="form-group row">
                             <label for="nama_pd" class="col-sm-3 col-form-label">Nama Siswa</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="nama_pd" name="nama_pd" required>
+                                <input type="text" class="form-control" id="nama_pd" name="nama_pd">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="nisn">NISN</label>
-                                <input type="text" class="form-control" id="nisn" name="nisn" required>
+                                <input type="text" class="form-control" id="nisn" name="nisn">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="inputState">Kelas</label>
-                                <select id="inputState" class="form-control" name="kelas" required>
+                                <label for="kelas">Kelas</label>
+                                <select id="kelas" class="form-control" name="kelas">
                                     <option selected>Pilih kelas...</option>
                                     <option value="1">Kelas 1</option>
                                     <option value="2">Kelas 2</option>
@@ -211,12 +211,12 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="tempat_lahir">Tempat Lahir</label>
-                                <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" required>
+                                <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir">
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Tanggal Lahir</label>
                                 <div class="input-group date" id="tanggalLahir" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" data-target="#tanggalLahir" name="tanggal_lahir" required />
+                                    <input type="text" class="form-control datetimepicker-input" id="tanggal_lahir" data-target="#tanggalLahir" name="tanggal_lahir" />
                                     <div class="input-group-append" data-target="#tanggalLahir" data-toggle="datetimepicker">
                                         <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                     </div>
@@ -226,11 +226,11 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="nik">NIK</label>
-                                <input type="text" class="form-control" id="nik" name="nik" required>
+                                <input type="text" class="form-control" id="nik" name="nik">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="inputState">Jenis Kelamin</label>
-                                <select id="inputState" class="form-control" name="jenis_kelamin" required>
+                                <label for="jenis_kelamin">Jenis Kelamin</label>
+                                <select id="jenis_kelamin" class="form-control" name="jenis_kelamin">
                                     <option selected>Pilih jenis kelamin...</option>
                                     <option value="Laki-laki">Laki-Laki</option>
                                     <option value="Perempuan">Perempuan</option>
@@ -244,13 +244,13 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="nama_ibu_kandung">Nama Ibu</label>
-                                <input type="text" class="form-control" id="nama_ibu_kandung" name="nama_ibu_kandung" required>
+                                <input type="text" class="form-control" id="nama_ibu_kandung" name="nama_ibu_kandung">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="inputState">Jenis Bantuan</label>
-                                <select id="inputState" class="form-control" name="jenis_bantuan">
+                                <label for="jenis_bantuan">Jenis Bantuan</label>
+                                <select id="jenis_bantuan" class="form-control" name="jenis_bantuan">
                                     <option selected>Pilih jenis bantuan...</option>
                                     <option value="BSM">BSM</option>
                                     <option value="SIABAZKu">SIABAZKu</option>
@@ -259,14 +259,14 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="tahap_id">Tahap</label>
-                                <input type="text" class="form-control" id="tahap_id" name="tahap_id" required>
+                                <input type="text" class="form-control" id="tahap_id" name="tahap_id">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label>Tanggal SK</label>
                                 <div class="input-group date" id="tanggalSk" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" data-target="#tanggalSk" name="tanggal_sk" required />
+                                    <input type="text" class="form-control datetimepicker-input" id="tanggal_sk" data-target="#tanggalSk" name="tanggal_sk" />
                                     <div class="input-group-append" data-target="#tanggalSk" data-toggle="datetimepicker">
                                         <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                     </div>
@@ -275,7 +275,7 @@
 
                             <div class="form-group col-md-6">
                                 <label for="nomor_sk">Nomor SK</label>
-                                <input type="text" class="form-control" id="nomor_sk" name="nomor_sk" required>
+                                <input type="text" class="form-control" id="nomor_sk" name="nomor_sk">
                             </div>
                         </div>
                         <div class="form-row">
@@ -285,11 +285,11 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="no_rekening">No Rekening</label>
-                                <input type="text" class="form-control" id="nama_rekening" name="no_rekening">
+                                <input type="text" class="form-control" id="no_rekening" name="no_rekening">
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="nominal">Nominal</label>
-                                <input type="text" class="form-control" id="nominal" name="nominal" oninput="validateNumberInput(this)" required>
+                                <input type="text" class="form-control" id="nominal" name="nominal" oninput="validateNumberInput(this)">
                                 <small class="text-danger" id="nominalError"></small>
                             </div>
 
@@ -297,7 +297,7 @@
                         <div class="form-group row">
                             <label for="informasi" class="col-sm-2 col-form-label">Keterangan</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" id="informasi" name="informasi" required></textarea>
+                                <textarea class="form-control" id="informasi" name="informasi"></textarea>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -375,7 +375,7 @@
                                 <input type="text" class="form-control" id="nik_edit" name="nik_edit" required>
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="inputState">Jenis Kelamin</label>
+                                <label for="jenis_kelamin_edit">Jenis Kelamin</label>
                                 <select id="jenis_kelamin_edit" class="form-control" name="jenis_kelamin_edit" required>
                                     <option selected>Pilih jenis kelamin...</option>
                                     <option value="Laki-laki">Laki-Laki</option>
@@ -385,7 +385,7 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="nama_ayah">Nama Ayah</label>
+                                <label for="nama_ayah_edit">Nama Ayah</label>
                                 <input type="text" class="form-control" id="nama_ayah_edit" name="nama_ayah_edit">
                             </div>
                             <div class="form-group col-md-6">
@@ -395,7 +395,7 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="jenis_bantuan">Jenis Bantuan</label>
+                                <label for="jenis_bantuan_edit">Jenis Bantuan</label>
                                 <select id="jenis_bantuan_edit" class="form-control" name="jenis_bantuan_edit">
                                     <option selected>Pilih jenis bantuan...</option>
                                     <option value="BSM">BSM</option>
@@ -430,7 +430,7 @@
                                 <input type="text" class="form-control" id="nama_rekening_edit" name="nama_rekening_edit">
                             </div>
                             <div class="form-group col-md-4">
-                                <label for="no_rekening">No Rekening</label>
+                                <label for="no_rekening_edit">No Rekening</label>
                                 <input type="text" class="form-control" id="no_rekening_edit" name="no_rekening_edit">
                             </div>
                             <div class="form-group col-md-4">

@@ -127,7 +127,11 @@
                 var hubunganPd = $('#hubungan_pd').val();
 
                 if (!selectedSiswaId) {
-                    alert('Silakan pilih siswa terlebih dahulu.');
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Silakan pilih siswa terlebih dahulu.'
+                    });
                     return;
                 }
 

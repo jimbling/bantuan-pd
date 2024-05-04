@@ -49,6 +49,8 @@ $website = $data_pengaturan['website'];
 <script src="../../assets/plugins/toastr/toastr.min.js"></script>
 <script src="../../assets/plugins/chart.js/Chart.min.js"></script>
 <script src="../../assets/dist/js/grafik.js"></script>
+<script src="../../assets/dist/js/val-bantuanlainnya.js"></script>
+
 
 
 <script>

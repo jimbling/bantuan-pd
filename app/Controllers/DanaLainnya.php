@@ -64,6 +64,86 @@ class DanaLainnya extends BaseController
     public function simpanDanaLain()
     {
 
+        // Validasi input
+        $rules = [
+            'nama_pd' => 'required',
+            'nisn' => 'required',
+            'kelas' => 'required',
+            'tempat_lahir' => 'required', // tambahkan aturan validasi untuk semua field yang diharuskan diisi
+            'tanggal_lahir' => 'required', // Sesuaikan aturan validasi untuk tanggal
+            'nik' => 'required',
+            'jenis_kelamin' => 'required',
+            'nama_ayah' => 'required',
+            'nama_ibu_kandung' => 'required',
+            'jenis_bantuan' => 'required',
+            'tahap_id' => 'required',
+            'tanggal_sk' => 'required', // Sesuaikan aturan validasi untuk tanggal
+            'nomor_sk' => 'required',
+            'nama_rekening' => 'required',
+            'no_rekening' => 'required',
+            'nominal' => 'required', // Validasi bahwa nominal harus angka
+            'informasi' => 'required',
+        ];
+
+        $errors = [
+            'nama_pd' => [
+                'required' => 'Nama PD harus diisi.'
+            ],
+            'nisn' => [
+                'required' => 'NISN harus diisi.'
+            ],
+            'kelas' => [
+                'required' => 'Kelas harus diisi.'
+            ],
+            'tempat_lahir' => [
+                'required' => 'Tempat Lahir harus diisi.'
+            ],
+            'tanggal_lahir' => [
+                'required' => 'Tanggal Lahir harus diisi.',
+            ],
+            'nik' => [
+                'required' => 'NIK harus diisi.'
+            ],
+            'jenis_kelamin' => [
+                'required' => 'Jenis Kelamin harus diisi.'
+            ],
+            'nama_ayah' => [
+                'required' => 'Nama Ayah harus diisi.'
+            ],
+            'nama_ibu_kandung' => [
+                'required' => 'Nama Ibu harus diisi.'
+            ],
+            'jenis_bantuan' => [
+                'required' => 'Jenis Bantuan harus diisi.'
+            ],
+            'tahap_id' => [
+                'required' => 'Tahap harus diisi.'
+            ],
+            'tanggal_sk' => [
+                'required' => 'Tanggal SK harus diisi.',
+
+            ],
+            'nomor_sk' => [
+                'required' => 'Nomor SK harus diisi.'
+            ],
+            'nama_rekening' => [
+                'required' => 'Nama Rekening harus diisi.'
+            ],
+            'no_rekening' => [
+                'required' => 'Nomor Rekening harus diisi.'
+            ],
+            'nominal' => [
+                'required' => 'Nominal harus diisi.',
+
+            ],
+            'informasi' => [
+                'required' => 'Keterangan harus diisi.'
+            ],
+        ];
+
+
+
+
         // Ambil data dari form input
         $nama_pd = $this->request->getPost('nama_pd');
         $nisn = $this->request->getPost('nisn');
@@ -116,7 +196,7 @@ class DanaLainnya extends BaseController
         $this->danalainModel->insertDanalain($data);
 
         // Redirect atau tampilkan pesan sukses
-        session()->setFlashData('pesanSimpanDanaLain', 'Data siswa berhasil disimpan');
+
         return redirect()->to('/bantuan/lainnya')->with('success', 'Data pengguna berhasil disimpan.');
     }
 
