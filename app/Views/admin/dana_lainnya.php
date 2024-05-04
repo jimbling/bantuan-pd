@@ -1,6 +1,5 @@
 <?php echo view('template/header.php'); ?>
-<div class="flash-data" data-flashdata="<?= (session()->getFlashData('pesanSimpanDanaLain')); ?>"></div><!-- Page Heading -->
-<div class="flash-data" data-flashdata="<?= (session()->getFlashData('pesanEditDanaLain')); ?>"></div><!-- Page Heading -->
+
 <div class="content-wrapper">
 
     <div class="content-header">
@@ -177,9 +176,6 @@
             <div class="modal-content">
                 <div class="modal-header bg-primary">
                     <h5 class="modal-title" id="staticBackdropLabel">Tambah Siswa Penerima Bantuan Lainnya</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
                 <div class="modal-body">
                     <form action="/danalain/simpan" method="post" id="formTambahPeserta">
@@ -301,7 +297,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
                             <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
 
@@ -319,9 +315,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-primary">
                     <h5 class="modal-title" id="staticBackdropLabel">Edit Siswa Penerima Bantuan Lainnya</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+
                 </div>
                 <div class="modal-body">
                     <form action="/danalain/update" method="post" id="formEditPeserta">
@@ -331,19 +325,19 @@
                         <div class="form-group row">
                             <label for="nama_pd_edit" class="col-sm-3 col-form-label">Nama Siswa</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="nama_pd_edit" name="nama_pd_edit" required>
+                                <input type="text" class="form-control" id="nama_pd_edit" name="nama_pd_edit">
                             </div>
                         </div>
                         <!-- Ganti ID dan Name dengan ID yang sesuai dengan data yang ingin diisi -->
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="nisn_edit">NISN</label>
-                                <input type="text" class="form-control" id="nisn_edit" name="nisn_edit" required>
+                                <input type="text" class="form-control" id="nisn_edit" name="nisn_edit">
                             </div>
                             <!-- Ganti ID dan Name dengan ID yang sesuai dengan data yang ingin diisi -->
                             <div class="form-group col-md-6">
                                 <label for="kelas_edit">Kelas</label>
-                                <select id="kelas_edit" class="form-control" name="kelas_edit" required>
+                                <select id="kelas_edit" class="form-control" name="kelas_edit">
                                     <option selected>Pilih kelas...</option>
                                     <option value="1">Kelas 1</option>
                                     <option value="2">Kelas 2</option>
@@ -357,12 +351,12 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="tempat_lahir">Tempat Lahir</label>
-                                <input type="text" class="form-control" id="tempat_lahir_edit" name="tempat_lahir_edit" required>
+                                <input type="text" class="form-control" id="tempat_lahir_edit" name="tempat_lahir_edit">
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Tanggal Lahir</label>
                                 <div class="input-group date" id="tanggalLahir" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" id="tanggalLahir_edit" data-target="#tanggalLahir_edit" name="tanggalLahir_edit" required />
+                                    <input type="text" class="form-control datetimepicker-input" id="tanggalLahir_edit" data-target="#tanggalLahir_edit" name="tanggalLahir_edit" />
                                     <div class="input-group-append" data-target="#tanggalLahir_edit" data-toggle="datetimepicker">
                                         <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                     </div>
@@ -372,11 +366,11 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="nik">NIK</label>
-                                <input type="text" class="form-control" id="nik_edit" name="nik_edit" required>
+                                <input type="text" class="form-control" id="nik_edit" name="nik_edit">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="jenis_kelamin_edit">Jenis Kelamin</label>
-                                <select id="jenis_kelamin_edit" class="form-control" name="jenis_kelamin_edit" required>
+                                <select id="jenis_kelamin_edit" class="form-control" name="jenis_kelamin_edit">
                                     <option selected>Pilih jenis kelamin...</option>
                                     <option value="Laki-laki">Laki-Laki</option>
                                     <option value="Perempuan">Perempuan</option>
@@ -390,7 +384,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="nama_ibu_kandung">Nama Ibu</label>
-                                <input type="text" class="form-control" id="nama_ibu_kandung_edit" name="nama_ibu_kandung_edit" required>
+                                <input type="text" class="form-control" id="nama_ibu_kandung_edit" name="nama_ibu_kandung_edit">
                             </div>
                         </div>
                         <div class="form-row">
@@ -405,14 +399,14 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="tahap_id">Tahap</label>
-                                <input type="text" class="form-control" id="tahap_id_edit" name="tahap_id_edit" required>
+                                <input type="text" class="form-control" id="tahap_id_edit" name="tahap_id_edit">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label>Tanggal SK</label>
                                 <div class="input-group date" id="tanggalSk" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" id="tanggalSk_edit" data-target="#tanggalSk_edit" name="tanggalSk_edit" required />
+                                    <input type="text" class="form-control datetimepicker-input" id="tanggalSk_edit" data-target="#tanggalSk_edit" name="tanggalSk_edit" />
                                     <div class="input-group-append" data-target="#tanggalSk_edit" data-toggle="datetimepicker">
                                         <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                     </div>
@@ -421,7 +415,7 @@
 
                             <div class="form-group col-md-6">
                                 <label for="nomor_sk">Nomor SK</label>
-                                <input type="text" class="form-control" id="nomor_sk_edit" name="nomor_sk_edit" required>
+                                <input type="text" class="form-control" id="nomor_sk_edit" name="nomor_sk_edit">
                             </div>
                         </div>
                         <div class="form-row">
@@ -435,7 +429,7 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="nominal">Nominal</label>
-                                <input type="text" class="form-control" id="nominal_edit" name="nominal_edit" oninput="validateNumberInput(this)" required>
+                                <input type="text" class="form-control" id="nominal_edit" name="nominal_edit" oninput="validateNumberInput(this)">
                                 <small class="text-danger" id="nominalError_edit"></small>
                             </div>
 
@@ -443,12 +437,12 @@
                         <div class="form-group row">
                             <label for="informasi" class="col-sm-2 col-form-label">Keterangan</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" id="informasi_edit" name="informasi_edit" required></textarea>
+                                <textarea class="form-control" id="informasi_edit" name="informasi_edit"></textarea>
                             </div>
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
                             <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                     </form>
@@ -458,261 +452,5 @@
     </div>
     <!-- Akhir Modal Edit Data -->
 
-
-
-
-    <script>
-        function showLoading() {
-            let timerInterval
-            Swal.fire({
-                title: 'Sedang memproses data ....',
-                timerProgressBar: true,
-                didOpen: () => {
-                    Swal.showLoading()
-                    const b = Swal.getHtmlContainer().querySelector('b')
-                    timerInterval = setInterval(() => {
-                        b.textContent = Swal.getTimerLeft()
-                    }, 100)
-                }
-            });
-        }
-
-        function hideLoading() {
-            Swal.close();
-        }
-
-        function ambil_bank(data_id) {
-            Swal.fire({
-                title: 'Konfirmasi?',
-                text: "Apakah benar siswa sudah mengambil Dana di Bank?",
-                icon: 'question',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Ya, Benar!'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    // Tampilkan pesan loading saat permintaan sedang dijalankan
-                    showLoading();
-
-                    // Lakukan permintaan penghapusan ke server, misalnya dengan AJAX.
-                    // Jika penghapusan berhasil, maka lakukan redirect ke halaman /siswa.
-                    // Contoh penggunaan jQuery untuk permintaan penghapusan:
-                    $.ajax({
-                        type: 'POST',
-                        url: '/danalain/ambilbank/' + data_id, // Ganti URL sesuai dengan URL yang benar
-                        success: function(response) {
-                            // Sembunyikan pesan loading saat permintaan selesai
-                            hideLoading();
-
-                            // Nonaktifkan tombol Ambil
-                            $('#btnAmbil').prop('disabled', true);
-
-                            Swal.fire({
-                                title: 'Berhasil!',
-                                text: 'Dana sudah diambil Siswa.',
-                                icon: 'success',
-                                timer: 2000, // Durasi tampilan dalam milidetik (misalnya, 5000 milidetik = 5 detik)
-                                showConfirmButton: false, // Sembunyikan tombol OK (jika tidak diinginkan)
-                            }).then(() => {
-                                // Arahkan pengguna ke halaman baru setelah SweetAlert ditutup
-                                window.location.replace("/bantuan/lainnya");
-                            });
-                        },
-                        error: function(xhr, status, error) {
-                            // Sembunyikan pesan loading saat ada kesalahan dalam penghapusan
-                            hideLoading();
-                            // Handle error here, jika ada kesalahan dalam penghapusan
-                            console.log(error);
-                        }
-                    });
-                }
-            });
-        }
-    </script>
-
-    <script>
-        function showLoading() {
-            let timerInterval
-            Swal.fire({
-                title: 'Sedang memproses data ....',
-                timerProgressBar: true,
-                didOpen: () => {
-                    Swal.showLoading()
-                    const b = Swal.getHtmlContainer().querySelector('b')
-                    timerInterval = setInterval(() => {
-                        b.textContent = Swal.getTimerLeft()
-                    }, 100)
-                }
-            });
-        }
-
-        function hideLoading() {
-            Swal.close();
-        }
-
-        function hapus_data(data_id) {
-            Swal.fire({
-                title: 'HAPUS?',
-                text: "Yakin akan menghapus data ini?",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Ya, Hapus!'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    // Tampilkan pesan loading saat permintaan sedang dijalankan
-                    showLoading();
-                    // Lakukan permintaan penghapusan ke server, misalnya dengan AJAX.
-                    // Jika penghapusan berhasil, maka lakukan redirect ke halaman /siswa.
-                    // Contoh penggunaan jQuery untuk permintaan penghapusan:
-                    $.ajax({
-                        type: 'POST',
-                        url: '/siswadanalain/hapus/' + data_id, // Ganti URL sesuai dengan URL yang benar
-                        success: function(response) {
-                            // Sembunyikan pesan loading saat permintaan selesai
-                            hideLoading();
-                            Swal.fire({
-                                title: 'Berhasil!',
-                                text: 'Data berhasil dihapus.',
-                                icon: 'success',
-                                timer: 2000, // Durasi tampilan dalam milidetik (misalnya, 5000 milidetik = 5 detik)
-                                showConfirmButton: false, // Sembunyikan tombol OK (jika tidak diinginkan)
-                            }).then(() => {
-                                // Arahkan pengguna ke halaman baru setelah SweetAlert ditutup
-                                window.location.replace("/bantuan/lainnya");
-                            });
-                        },
-                        error: function(xhr, status, error) {
-                            // Sembunyikan pesan loading saat ada kesalahan dalam penghapusan
-                            hideLoading();
-                            // Handle error here, jika ada kesalahan dalam penghapusan
-                            console.log(error);
-                        }
-                    });
-                }
-            });
-        }
-    </script>
-
-    <!-- TAMPILAN POPUP SAAT HALAMAN PERTAMA KALI DIMUAT -->
-    <!-- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Tambahkan kode untuk menampilkan popup di sini
-        // Contoh menggunakan SweetAlert
-        Swal.fire({
-            title: 'Selamat Datang!',
-            text: 'Terima kasih telah mengunjungi halaman ini.',
-            icon: 'info',
-            confirmButtonText: 'OK'
-        });
-    });
-</script> -->
-
-    <!-- Letakkan skrip JavaScript di bagian bawah halaman atau gunakan $(document).ready -->
-    <script>
-        function openEditModal(id) {
-            // Set nilai input hidden dengan ID yang diambil dari tombol edit
-            document.getElementById('edit_id').value = id;
-
-            // Perbarui aksi formulir sesuai dengan ID
-            document.getElementById('formEditPeserta').action = "/danalain/update/" + id;
-            // Fetch data using AJAX
-            $.ajax({
-                url: '/danalain/get_detail/' + id,
-                method: 'GET',
-                success: function(data) {
-                    console.log(data); // Periksa data yang diterima di konsol browser
-                    // Populate the modal with the fetched data
-                    $('#editDanaLainModal').modal('show');
-                    populateEditModal(data);
-
-                    // Set nilai input tersembunyi dengan nilai 'id'
-                    $('#editId').val(id);
-                },
-                error: function(xhr, status, error) {
-                    console.error(error);
-                }
-            });
-        }
-
-        function populateEditModal(data) {
-            // Populate the form fields with the fetched data
-            $('#nama_pd_edit').val(data.nama_pd);
-            $('#nisn_edit').val(data.nisn);
-            $('#kelas_edit').val(data.kelas);
-            $('#tempat_lahir_edit').val(data.tempat_lahir);
-            // Ubah format tanggal untuk tanggal_lahir
-            $('#tanggalLahir_edit').val(moment(data.tanggal_lahir, 'YYYY-MM-DD').format('YYYY-MM-DD'));
-            $('#nik_edit').val(data.nik);
-            $('#jenis_kelamin_edit').val(data.jenis_kelamin);
-            $('#nama_ayah_edit').val(data.nama_ayah);
-            $('#nama_ibu_kandung_edit').val(data.nama_ibu_kandung);
-            $('#jenis_bantuan_edit').val(data.jenis_bantuan);
-            $('#tahap_id_edit').val(data.tahap_id);
-            // Ubah format tanggal untuk tanggal_sk
-            $('#tanggalSk_edit').val(moment(data.tanggal_sk, 'YYYY-MM-DD').format('YYYY-MM-DD'));
-            $('#nomor_sk_edit').val(data.nomor_sk);
-            $('#nama_rekening_edit').val(data.nama_rekening);
-            $('#no_rekening_edit').val(data.no_rekening);
-            $('#nominal_edit').val(data.nominal);
-            $('#informasi_edit').val(data.informasi);
-        }
-    </script>
-
-    <script>
-        function validateNumberInput(inputElement) {
-            // Bersihkan teks non-angka dari nilai input
-            inputElement.value = inputElement.value.replace(/\D/g, '');
-
-            // Tampilkan pesan kesalahan jika nilai input tidak hanya terdiri dari angka
-            var errorElement = document.getElementById('nominalError');
-            if (!/^\d+$/.test(inputElement.value)) {
-                errorElement.textContent = 'Masukkan hanya angka.';
-                inputElement.setCustomValidity('Masukkan hanya angka.');
-            } else {
-                errorElement.textContent = '';
-                inputElement.setCustomValidity('');
-            }
-        }
-    </script>
-
-    <script>
-        function validateNumberInput(inputElement) {
-            // Bersihkan teks non-angka dari nilai input
-            inputElement.value = inputElement.value.replace(/\D/g, '');
-
-            // Tampilkan pesan kesalahan jika nilai input tidak hanya terdiri dari angka
-            var errorElement = document.getElementById('nominalError_edit');
-            if (!/^\d+$/.test(inputElement.value)) {
-                errorElement.textContent = 'Masukkan hanya angka.';
-                inputElement.setCustomValidity('Masukkan hanya angka.');
-            } else {
-                errorElement.textContent = '';
-                inputElement.setCustomValidity('');
-            }
-        }
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Ambil flashdata pertama
-            var pesanSimpan = document.querySelector('.flash-data[data-flashdata="pesanSimpanDanaLain"]');
-            if (pesanSimpan) {
-                // Tampilkan pesan atau lakukan tindakan sesuai dengan flashdata pertama
-                console.log('Pesan Simpan: ' + pesanSimpan.dataset.flashdata);
-                // Tambahkan kode atau tindakan yang sesuai di sini
-            }
-
-            // Ambil flashdata kedua
-            var pesanEdit = document.querySelector('.flash-data[data-flashdata="pesanEditDanaLain"]');
-            if (pesanEdit) {
-                // Tampilkan pesan atau lakukan tindakan sesuai dengan flashdata kedua
-                console.log('Pesan Edit: ' + pesanEdit.dataset.flashdata);
-                // Tambahkan kode atau tindakan yang sesuai di sini
-            }
-        });
-    </script>
-
+    <script src="../../assets/dist/js/dana-lainnya.js"></script>
     <?php echo view('template/footer.php'); ?>
