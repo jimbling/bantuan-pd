@@ -87,7 +87,7 @@
             <div class="card card-primary card-outline">
                 <div class="card-body">
 
-                    <table class="table-bordered table-striped table-responsive table-sm">
+                    <table class="table-bordered table-striped" id="BantuanPipTable">
                         <thead class="thead-grey" style="font-size: 14px;">
                             <tr style="text-align: center;">
                                 <th width='3%'>No</th>
@@ -304,12 +304,12 @@
             </div>
         </div>
     </div>
+
     <script src="../../assets/dist/js/jquery-3.6.0.min.js"></script>
     <script src="../../assets/dist/js/bantuan.pip.js"></script>
     <script>
         const baseUrl = '<?= base_url() ?>';
     </script>
-
 
 
 

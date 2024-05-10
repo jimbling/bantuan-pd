@@ -332,27 +332,11 @@
             });
         });
 
-        $(document).ready(function() {
-            // Inisialisasi DataTables
-            var table = $('.table-bordered').DataTable({
-                responsive: true,
-                ordering: false
-            });
 
-            // Set ulang tooltips setiap kali tabel dirender ulang
-            table.on('draw.dt', function() {
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        });
 
         $(document).ready(function() {
-            // Inisialisasi DataTables jika belum diinisialisasi sebelumnya
-            if (!$.fn.DataTable.isDataTable('.table-bordered')) {
-                var table = $('.table-bordered').DataTable({
-                    responsive: true,
-                    ordering: false
-                });
-            }
+          // Inisialisasi DataTables
+
 
             // Fungsi untuk melakukan validasi setiap kali tabel digambar ulang
             function validateFileUpload() {

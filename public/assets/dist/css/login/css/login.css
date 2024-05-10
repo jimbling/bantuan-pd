@@ -1,24 +1,24 @@
-html,body{
-    overflow-x: hidden!important;
-    font-family: 'Source Sans Pro', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    height: 100%;
-    background: #ca6200;
-    font-size: 15px;
-    background-image: url(../img/pattern/pat_03.png), url(../img/login-bg.jpg);
-    background-repeat: repeat, no-repeat;
-    background-position: 0 0;
-    background-size: 5px 5px, cover;
+body {
+  background: linear-gradient(to bottom right, rgba(163, 200, 255, 0.5), rgba(240, 240, 240, 0.5), rgba(255, 255, 255, 0.5)), url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/back_pattern.png');
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
 }
-#main_cont {
-    background: #0400ff;
-    padding: 20px;
-    width: 420px;
-    margin: 0 auto;
-    border-radius: 10px;
-     /* Sesuaikan angka ini dengan sejauh mana sudut dibulatkan */:;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 400px;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
 }

@@ -1,232 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" class="app">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <title>Login :: Sistem Informasi Manajemen Bantuan Pendidikan SDN Kedungrejo</title>
   <meta name="description" content="Halaman Login Sistem Informasi Manajemen Data Penerima Bantuan Pendidikan" />
+  <meta name="keywords" content="sim, sdnkedungrejo, sd n kedungrejo, pip, baznas, siabazku, bantuan">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link rel="stylesheet" href="../../assets/dist/login/css/animate.css" type="text/css" />
-  <link rel="stylesheet" href="../../assets/dist/login/css/app.css" type="text/css" />
-
-
-
-  <style id="compiled-css" type="text/css">
-    :root {
-      --input-padding-x: 1.5rem;
-      --input-padding-y: .75rem;
-    }
-
-    .mask,
-    .plane {
-      perspective: 1000;
-      backface-visibility: hidden
-    }
-
-    #middle .plane,
-    .plane {
-      transform: translate3d(0, 0, 0)
-    }
-
-    body {
-      background: #9CECFB;
-      background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
-      background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB)
-    }
-
-    .card-signin {
-      border: 0;
-      border-radius: 1rem;
-      box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, .1)
-    }
-
-    .card-signin .card-title {
-      margin-bottom: 2rem;
-      font-weight: 300;
-      font-size: 1.5rem
-    }
-
-    .card-signin .card-body {
-      padding: 2rem
-    }
-
-    .form-signin {
-      width: 100%
-    }
-
-    .form-signin .btn {
-      font-size: 80%;
-      border-radius: 5rem;
-      letter-spacing: .1rem;
-      font-weight: 700;
-      padding: 1rem;
-      transition: all .2s
-    }
-
-    .form-label-group {
-      position: relative;
-      margin-bottom: 1rem
-    }
-
-    .form-label-group input {
-      height: auto;
-      border-radius: 2rem
-    }
-
-    .form-label-group>input,
-    .form-label-group>label {
-      padding: var(--input-padding-y) var(--input-padding-x)
-    }
-
-    .form-label-group>label {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      width: 100%;
-      margin-bottom: 0;
-      line-height: 1.5;
-      color: #495057;
-      border: 1px solid transparent;
-      border-radius: .25rem;
-      transition: all .1s ease-in-out
-    }
-
-    .form-label-group input::-webkit-input-placeholder {
-      color: transparent
-    }
-
-    .form-label-group input:-ms-input-placeholder {
-      color: transparent
-    }
-
-    .form-label-group input::-ms-input-placeholder {
-      color: transparent
-    }
-
-    .form-label-group input::-moz-placeholder {
-      color: transparent
-    }
-
-    .form-label-group input::placeholder {
-      color: transparent
-    }
-
-    .form-label-group input:not(:placeholder-shown) {
-      padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
-      padding-bottom: calc(var(--input-padding-y)/ 3)
-    }
-
-    .form-label-group input:not(:placeholder-shown)~label {
-      padding-top: calc(var(--input-padding-y)/ 3);
-      padding-bottom: calc(var(--input-padding-y)/ 3);
-      font-size: 12px;
-      color: #777
-    }
-
-    .btn-google {
-      color: #fff;
-      background-color: #ea4335
-    }
-
-    .btn-facebook {
-      color: #fff;
-      background-color: #3b5998
-    }
-
-    #global {
-      width: 70px;
-      margin: 300px auto auto;
-      position: relative;
-      cursor: pointer;
-      height: 60px
-    }
-
-    .mask {
-      position: absolute;
-      border-radius: 2px;
-      overflow: hidden
-    }
-
-    .plane {
-      background: gold;
-      width: 400%;
-      height: 100%;
-      position: absolute;
-      z-index: 100
-    }
-
-    .animation {
-      transition: all .3s ease
-    }
-  </style>
-
-
+  <link rel="stylesheet" href="../../assets/dist/css/spasi_icon.css">
+  <link rel="stylesheet" href="../../assets/dist/css/login/css/login.css">
+  <link rel="stylesheet" href="../../assets/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/plugins/toastr/toastr.min.css">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
+<?php
+
+use App\Services\PengaturanService;
+
+$pengaturanService = new PengaturanService();
+
+// Mendapatkan nama kampus dan website
+$data_pengaturan = $pengaturanService->getNamaSatdik();
+$nama_sp = $data_pengaturan['nama_sp'];
+$website = $data_pengaturan['website'];
+?>
+
 <div class="flash-data" data-flashdata="<?= (session()->getFlashData('pesanMasuk')); ?>"></div><!-- Page Heading -->
 
-<body class="bg-login">
+<body class="bg-gray-100">
 
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card card-signin my-5">
-          <div class="card-body">
-
-            <center><a href="https://www.simpeg.acehtengahkab.go.id/"><img src="../../assets/dist/login/logo.png" alt="" width="60" /></a></center><br>
-            </center>
-            <h5 class="text-left" style="font-size: 18px"><b>
-                <center>Sistem Informasi Manajemen</center>
-              </b></h5>
-
-            <form class="form-signin" action="masuk/auth" id="login-form" method="post">
-              <input type="hidden" name="<?= csrf_token() ?>" value="<?= $csrfToken ?>">
-
-              <h5 class="text-left" style="font-size: 13px">
-                <center>Bantuan Pendidikan Peserta Didik</center>
-              </h5><br>
-              </center>
-
-              <div class="form-label-group">
-                <input type="text" id="inputName" name="username" class="form-control" placeholder="Username" autocomplete="off" required>
-                <label for="inputName">Username Admin</label>
-              </div>
-
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
-              </div>
-
-
-              <button class="btn btn-lg btn-primary btn-block text-uppercase submit" type="submit">MASUK</button><br>
-              <small class="card-title text-center msgform" style="font-size: 14px;text-align: center;"></small>
-              <hr class="my-4">
-              <a href="https://www.sdnkedungrejo.sch.id/" target="_blank" style="color: #1d2030; text-decoration: none;">
-                <h5 class="text-left" style="font-size: 13px"><b>SD Negeri Kedungrejo Kapanewon Pengasih Kab. Kulon Progo</b> </h5>
-              </a>
-
-            </form>
-
-
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center h-screen">
+    <!-- Deskripsi -->
+    <div class="p-8 text-justify">
+      <h2 class="text-2xl font-bold">SIM Bantuan PD</h2>
+      <p class="text-gray-600">Sistem Informasi Manajemen untuk mengelola bantuan yang diterima oleh peserta didik di
+        <?= $nama_sp; ?>.</p>
+      <p class="text-gray-600">SIM Bantuan PD memungkinkan Administrator untuk melakukan pencetakan surat keterangan
+        pengambilan dibank, menyimpan buku tabungan, rekap penerima bantuan, dan pencarian peserta didik yang
+        menerima bantuan berdasarkan NISN.</p>
+    </div>
+    <!-- Form Login -->
+    <div class="max-w-md w-full bg-white shadow-md rounded-md overflow-hidden">
+      <div class="p-8">
+        <h4 class="text-lg font-semibold mb-4">Masuk Administrator</h4>
+        <form class="form-signin" action="masuk/auth" id="login-form" method="post">
+          <input type="hidden" name="<?= csrf_token() ?>" value="<?= $csrfToken ?>">
+          <div class="mb-3">
+            <label for="username" class="form-label">Email</label>
+            <input type="email" class="form-control" id="username" name="username" placeholder="Masukkan alamat email" required>
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan password" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-full flex justify-center items-center"><i class='fas fa-sign-in-alt spaced-icon'></i>Login</button>
+        </form>
       </div>
     </div>
   </div>
 
-
-  <!-- jQuery 2.0.2 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../../assets/dist/css/login/js/jquery.min.js"></script>
   <!-- Bootstrap -->
   <script src="../../assets/dist/css/login/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="../../assets/dist/sweet/sweetalert2.all.min.js"></script>
-  <script src="../../assets/dist/sweet/myscript.js"></script>
+  <script src="../../assets/plugins/toastr/toastr.min.js"></script>
+  <script>
+    // Ambil data flash message dari div dengan kelas flash-data
+    var flashData = $('.flash-data').data('flashdata');
+
+    // Jika ada flash data dengan pesanMasuk
+    if (flashData) {
+      // Tampilkan pesan menggunakan toastr
+      toastr.error(flashData, 'Error');
+    }
+  </script>
 
 </body>
 

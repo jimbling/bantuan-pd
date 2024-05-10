@@ -1,89 +1,224 @@
 <!DOCTYPE html>
-<html class="login-page">
+<html lang="en" class="app">
 
 <head>
-  <meta charset="UTF-8">
-  <title>SIM SDN Kedungrejo</title>
-  <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-  <meta name="description" content="Sitem Informasi Manajemen (SIM) Bantuan Peserta Didik, adalah SIM untuk mengelola bantuan PIP dan lainnya pada SD Negeri Kedungrejo Pengasih Kulon Progo">
-  <meta name="keywords" content="sim, sdn kedungrejo, pengasih, kulon progo, sd pengasih, website sd, webiste sekolah dasar">
-  <meta name="author" content="SD Negeri Kedungrejo Pengasih">
-  <!-- bootstrap 3.0.2 -->
-  <link href="../../assets/dist/css/login/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <!-- font Awesome -->
-  <link href="../../assets/dist/css/login/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <!-- Theme style -->
-  <link href="../../assets/dist/css/login/css/style.css" rel="stylesheet" type="text/css" />
-  <link href="../../assets/dist/css/login/css/app.css" rel="stylesheet" type="text/css" />
-  <link href="../../assets/dist/css/login/css/login.css" rel="stylesheet" type="text/css" />
-  <link href="../../assets/dist/css/login/css/style_menu.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <meta charset="utf-8" />
+  <title>Login :: Sistem Informasi Manajemen Bantuan Pendidikan SDN Kedungrejo</title>
+  <meta name="description" content="Halaman Login Sistem Informasi Manajemen Data Penerima Bantuan Pendidikan" />
+  <meta name="keywords" content="sim, sdnkedungrejo, sd n kedungrejo, pip, baznas, siabazku, bantuan">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="../../assets/dist/login/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="../../assets/dist/login/css/app.css" type="text/css" />
 
-  <style type="text/css">
-    html,
+
+
+  <style id="compiled-css" type="text/css">
+    :root {
+      --input-padding-x: 1.5rem;
+      --input-padding-y: .75rem;
+    }
+
+    .mask,
+    .plane {
+      perspective: 1000;
+      backface-visibility: hidden
+    }
+
+    #middle .plane,
+    .plane {
+      transform: translate3d(0, 0, 0)
+    }
+
     body {
-      background-image: url('#'), url('../../assets/dist/img/gedung.png');
+      background: #9CECFB;
+      background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+      background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB)
+    }
+
+    .card-signin {
+      border: 0;
+      border-radius: 1rem;
+      box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, .1)
+    }
+
+    .card-signin .card-title {
+      margin-bottom: 2rem;
+      font-weight: 300;
+      font-size: 1.5rem
+    }
+
+    .card-signin .card-body {
+      padding: 2rem
+    }
+
+    .form-signin {
+      width: 100%
+    }
+
+    .form-signin .btn {
+      font-size: 80%;
+      border-radius: 5rem;
+      letter-spacing: .1rem;
+      font-weight: 700;
+      padding: 1rem;
+      transition: all .2s
+    }
+
+    .form-label-group {
+      position: relative;
+      margin-bottom: 1rem
+    }
+
+    .form-label-group input {
+      height: auto;
+      border-radius: 2rem
+    }
+
+    .form-label-group>input,
+    .form-label-group>label {
+      padding: var(--input-padding-y) var(--input-padding-x)
+    }
+
+    .form-label-group>label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
+      line-height: 1.5;
+      color: #495057;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      transition: all .1s ease-in-out
+    }
+
+    .form-label-group input::-webkit-input-placeholder {
+      color: transparent
+    }
+
+    .form-label-group input:-ms-input-placeholder {
+      color: transparent
+    }
+
+    .form-label-group input::-ms-input-placeholder {
+      color: transparent
+    }
+
+    .form-label-group input::-moz-placeholder {
+      color: transparent
+    }
+
+    .form-label-group input::placeholder {
+      color: transparent
+    }
+
+    .form-label-group input:not(:placeholder-shown) {
+      padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+      padding-bottom: calc(var(--input-padding-y)/ 3)
+    }
+
+    .form-label-group input:not(:placeholder-shown)~label {
+      padding-top: calc(var(--input-padding-y)/ 3);
+      padding-bottom: calc(var(--input-padding-y)/ 3);
+      font-size: 12px;
+      color: #777
+    }
+
+    .btn-google {
+      color: #fff;
+      background-color: #ea4335
+    }
+
+    .btn-facebook {
+      color: #fff;
+      background-color: #3b5998
+    }
+
+    #global {
+      width: 70px;
+      margin: 300px auto auto;
+      position: relative;
+      cursor: pointer;
+      height: 60px
+    }
+
+    .mask {
+      position: absolute;
+      border-radius: 2px;
+      overflow: hidden
+    }
+
+    .plane {
+      background: gold;
+      width: 400%;
+      height: 100%;
+      position: absolute;
+      z-index: 100
+    }
+
+    .animation {
+      transition: all .3s ease
     }
   </style>
+
+
 </head>
 <div class="flash-data" data-flashdata="<?= (session()->getFlashData('pesanMasuk')); ?>"></div><!-- Page Heading -->
 
-<body>
-  <div id="main_cont">
-    <div class="form-box" id="login-box">
-      <div class="header company-pattern">
-        <img src="../../assets/dist/img/logo.png" height="150"><br />
-        Sistem Informasi Manajemen <p> <b>Bantuan Peserta Didik</b> </p>
-      </div>
+<body class="bg-login">
 
-      <form action="masuk/auth" method="post">
-        <input type="hidden" name="<?= csrf_token() ?>" value="<?= $csrfToken ?>">
-        <div class="body bg-gray">
-          <div class="form-group">
-            <input type="text" name="username" id="username" class="form-control" placeholder="Akun Pengguna" />
-          </div>
-          <div class="form-group">
-            <input type="password" name="password" class="form-control" placeholder="Kata Sandi" />
-          </div>
-          <div class="form-group">
-            <div class="checkbox" style="margin-left:20px">
-              <label>
-                <input type="checkbox" name="remember_me" value="1" /> Ingat saya
-              </label>
-            </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+
+            <center><img src="../../assets/dist/login/logo.png" alt="" width="60" /></center><br>
+            </center>
+            <h5 class="text-left" style="font-size: 18px"><b>
+                <center>Sistem Informasi Manajemen</center>
+              </b></h5>
+
+            <form class="form-signin" action="masuk/auth" id="login-form" method="post">
+              <input type="hidden" name="<?= csrf_token() ?>" value="<?= $csrfToken ?>">
+
+              <h5 class="text-left" style="font-size: 13px">
+                <center>Bantuan Pendidikan Peserta Didik</center>
+              </h5><br>
+              </center>
+
+              <div class="form-label-group">
+                <input type="text" id="inputName" name="username" class="form-control" placeholder="Username" autocomplete="off" required>
+                <label for="inputName">Username Admin</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Password</label>
+              </div>
+
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase submit" type="submit">MASUK</button><br>
+              <small class="card-title text-center msgform" style="font-size: 14px;text-align: center;"></small>
+              <hr class="my-4">
+              <a href="https://www.sdnkedungrejo.sch.id/" target="_blank" style="color: #1d2030; text-decoration: none;">
+                <h5 class="text-left" style="font-size: 13px"><b>SD Negeri Kedungrejo Kapanewon Pengasih Kab. Kulon Progo</b> </h5>
+              </a>
+
+            </form>
           </div>
         </div>
-        <div class="footer">
-
-
-          <div class="col-lg-12 col-md-12 col-12" style="padding: 8px; ">
-            <div class="body_tombol_warna">
-              <div class="container_tombol">
-                <a href="http://webmail.kulonprogokab.go.id/" style="text-decoration:none; " target="_blank">
-                  <div class="box_tombol" style="--clr:#FCA64D; --clr2:#FA4F11; --clr3:#cc4210; --clr4:#af3205;">
-                    <div class="content_tombol">
-                      <div class="icon_tombol"><ion-icon name="checkmark-done-outline"></ion-icon></div>
-                      <div class="text_tombol">
-                        <h5>Login Webmail</h5>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="footer">
-            <a href="https://sdnkedungrejo.sch.id" target="_blank">SD Negeri Kedungrejo</a>
-            <a href="#" style="float: right; color:#A7A9AC;">Kulon Progo</a>
-          </div>
-      </form>
-
+      </div>
     </div>
   </div>
+
 
   <!-- jQuery 2.0.2 -->
   <script src="../../assets/dist/css/login/js/jquery.min.js"></script>
@@ -91,22 +226,7 @@
   <script src="../../assets/dist/css/login/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="../../assets/dist/sweet/sweetalert2.all.min.js"></script>
   <script src="../../assets/dist/sweet/myscript.js"></script>
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-91361426-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 </body>
 
 </html>

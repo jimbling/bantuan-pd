@@ -19,7 +19,7 @@ function hideLoading() {
 
 const flashData = $(".flash-data").data("flashdata");
 if (flashData) {
-  if (flashData === "Login gagal. Periksa Username dan Password anda.") {
+  if (flashData === "Login gagal. Periksa Email dan Password anda.") {
     Swal.fire({
       title: "Gagal",
       text: flashData,

@@ -48,7 +48,7 @@ class Masuk extends BaseController
             // Autentikasi gagal
             // Set pesan kesalahan
             $session = session();
-            $session->setFlashdata('pesanMasuk', 'Login gagal. Periksa Username dan Password anda.');
+            $session->setFlashdata('pesanMasuk', 'Login gagal. Periksa Email dan Password anda.');
             return redirect()->to('/');
         }
     }
